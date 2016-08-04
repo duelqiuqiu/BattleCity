@@ -48,3 +48,4 @@ replay: .yrp录像文件。
 expansions: 此目录里所有的.cdb文件将作为额外数据库被加载。
 games\ocgtcg：存放lflist.conf, string.conf, cards.cdb
 sound: 音频文件
+
