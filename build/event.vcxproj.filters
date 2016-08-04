@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="event">
+      <UniqueIdentifier>{09D1796C-60AA-244F-B1AB-6207FEBF744A}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\event\event.c">
+      <Filter>event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\event\buffer.c">
+      <Filter>event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\event\bufferevent.c">
+      <Filter>event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\event\bufferevent_sock.c">
+      <Filter>event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\event\bufferevent_pair.c">
+      <Filter>event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\event\listener.c">
+      <Filter>event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\event\evmap.c">
+      <Filter>event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\event\log.c">
+      <Filter>event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\event\evutil.c">
+      <Filter>event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\event\strlcpy.c">
+      <Filter>event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\event\signal.c">
+      <Filter>event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\event\bufferevent_filter.c">
+      <Filter>event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\event\evthread.c">
+      <Filter>event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\event\bufferevent_ratelim.c">
+      <Filter>event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\event\evutil_rand.c">
+      <Filter>event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\event\event_tagging.c">
+      <Filter>event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\event\http.c">
+      <Filter>event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\event\evdns.c">
+      <Filter>event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\event\evrpc.c">
+      <Filter>event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\event\win32select.c">
+      <Filter>event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\event\buffer_iocp.c">
+      <Filter>event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\event\event_iocp.c">
+      <Filter>event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\event\bufferevent_async.c">
+      <Filter>event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\event\evthread_win32.c">
+      <Filter>event</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,420 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A6A6C7DD-1C70-A844-A3C5-1B1FFEF971F0}</ProjectGuid>
+    <RootNamespace>ygopro</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>5.01</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140_xp</PlatformToolset>
+    <CLRSupport>false</CLRSupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140_xp</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140_xp</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\bin\debug\</OutDir>
+    <IntDir>..\obj\Debug\ygopro\</IntDir>
+    <TargetName>ygopro</TargetName>
+    <TargetExt>.exe</TargetExt>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <TargetName>ygopro</TargetName>
+    <TargetExt>.exe</TargetExt>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\bin\release\</OutDir>
+    <IntDir>..\obj\Release\ygopro\</IntDir>
+    <TargetName>ygopro</TargetName>
+    <TargetExt>.exe</TargetExt>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <TargetName>ygopro</TargetName>
+    <TargetExt>.exe</TargetExt>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions>-wd4996 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\ocgcore;..\irrlicht\include;..\irrlicht\src;..\freetype\include;..\event\include;..\sqlite3;..\irrKlang\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WIN32;_CRT_SECURE_NO_WARNINGS;_DEBUG;GAMECLIENT_ONLY;WINVER=_WIN32_WINNT_WINXP;BOOST_USE_WINAPI_VERSION=BOOST_USE_WINAPI_VERSION_WINXP;NO_IRR_COMPILE_WITH_JOYSTICK_EVENTS_;NO_HEARTBEAT;_WIN32_WINNT=0x0501;_USING_V110_SDK71_</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <ProgramDataBaseFileName>$(OutDir)ygopro.pdb</ProgramDataBaseFileName>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <StringPooling>true</StringPooling>
+      <DisableSpecificWarnings>4819</DisableSpecificWarnings>
+      <UndefinePreprocessorDefinitions>
+      </UndefinePreprocessorDefinitions>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WIN32;_CRT_SECURE_NO_WARNINGS;_DEBUG;_ITERATOR_DEBUG_LEVEL=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\ocgcore;..\irrlicht\include;..\freetype\include;..\event\include;..\sqlite3;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opengl32.lib;ws2_32.lib;winmm.lib;gdi32.lib;kernel32.lib;user32.lib;imm32.lib;User.obj;CImageLoaderBPG.obj;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)ygopro.exe</OutputFile>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+      <AdditionalLibraryDirectories>..\irrklang\lib\Win32-visualStudio;../ext/Debug</AdditionalLibraryDirectories>
+    </Link>
+    <PreBuildEvent>
+      <Command>del "F:\GameFolders\Program Files\游戏王YGOPRO_1.033.9\ygopro.exe"</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>copy  $(TargetPath) "F:\GameFolders\Program Files\游戏王YGOPRO_1.033.9\"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <ClCompile>
+      <AdditionalOptions>-wd4996 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\ocgcore;..\irrlicht\include;..\freetype\include;..\event\include;..\sqlite3;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WIN32;_CRT_SECURE_NO_WARNINGS;_DEBUG;GAMECLIENT_ONLY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <ProgramDataBaseFileName>$(OutDir)ygopro.pdb</ProgramDataBaseFileName>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <StringPooling>true</StringPooling>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WIN32;_CRT_SECURE_NO_WARNINGS;_DEBUG;_ITERATOR_DEBUG_LEVEL=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\ocgcore;..\irrlicht\include;..\freetype\include;..\event\include;..\sqlite3;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opengl32.lib;ws2_32.lib;winmm.lib;gdi32.lib;kernel32.lib;user32.lib;imm32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)ygopro.exe</OutputFile>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+    </Link>
+    <PreBuildEvent>
+      <Command>del "F:\GameFolders\Program Files\游戏王YGOPRO_1.033.9\ygopro.exe"</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>copy  $(TargetPath) "F:\GameFolders\Program Files\游戏王YGOPRO_1.033.9\"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions>-wd4996 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Full</Optimization>
+      <AdditionalIncludeDirectories>..\ocgcore;..\irrlicht\include;..\freetype\include;..\event\include;..\sqlite3;..\irrKlang\include;..\irrlicht\src;..\AndroidClient\AndroidClient.NativeActivity;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WIN32;_CRT_SECURE_NO_WARNINGS;GAMECLIENT_ONLY;WINVER=_WIN32_WINNT_WINXP;BOOST_USE_WINAPI_VERSION=BOOST_USE_WINAPI_VERSION_WINXP;IRRLICHT_FAST_MATH;NO_IRR_COMPILE_WITH_OGLES1_;NO_IRR_COMPILE_WITH_OGLES2_;NO_IRR_COMPILE_WITH_JOYSTICK_EVENTS_;_IRR_STATIC_LIB_;_WIN32_WINNT=0x0501;_USING_V110_SDK71_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WIN32;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\ocgcore;..\irrlicht\include;..\freetype\include;..\event\include;..\sqlite3;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>opengl32.lib;ws2_32.lib;winmm.lib;gdi32.lib;kernel32.lib;user32.lib;imm32.lib;irrlicht.lib;User.obj;CImageLoaderBPG.obj;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)ygopro.exe</OutputFile>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+      <AdditionalLibraryDirectories>..\irrklang\lib\Win32-visualStudio;..\bin\release\;../ext/Release</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <ClCompile>
+      <AdditionalOptions>-wd4996 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <AdditionalIncludeDirectories>..\ocgcore;..\irrlicht\include;..\freetype\include;..\event\include;..\sqlite3;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WIN32;_CRT_SECURE_NO_WARNINGS;GAMECLIENT_ONLY;WINVER=_WIN32_WINNT_WINXP;BOOST_USE_WINAPI_VERSION=BOOST_USE_WINAPI_VERSION_WINXP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WIN32;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\ocgcore;..\irrlicht\include;..\freetype\include;..\event\include;..\sqlite3;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>opengl32.lib;ws2_32.lib;winmm.lib;gdi32.lib;kernel32.lib;user32.lib;imm32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)ygopro.exe</OutputFile>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\gframe\bufferio.h" />
+    <ClInclude Include="..\gframe\CGUIButton.h" />
+    <ClInclude Include="..\gframe\CGUIAdapter.h" />
+    <ClInclude Include="..\gframe\CGUIImageButton.h" />
+    <ClInclude Include="..\gframe\CGUITTFont.h" />
+    <ClInclude Include="..\gframe\client_card.h" />
+    <ClInclude Include="..\gframe\client_field.h" />
+    <ClInclude Include="..\gframe\config.h" />
+    <ClInclude Include="..\gframe\data_manager.h" />
+    <ClInclude Include="..\gframe\deck_con.h" />
+    <ClInclude Include="..\gframe\deck_manager.h" />
+    <ClInclude Include="..\gframe\duelclient.h" />
+    <ClInclude Include="..\gframe\event_handler.h" />
+    <ClInclude Include="..\gframe\GlobalEventHandler.h" />
+    <ClInclude Include="..\gframe\IFileManager.h" />
+    <ClInclude Include="..\gframe\game.h" />
+    <ClInclude Include="..\gframe\IAudioTracker.h" />
+    <ClInclude Include="..\gframe\ikpMP3\CIrrKlangAudioStreamLoaderMP3.h" />
+    <ClInclude Include="..\gframe\ikpMP3\CIrrKlangAudioStreamMP3.h" />
+    <ClInclude Include="..\gframe\ikpMP3\decoder\internal.h" />
+    <ClInclude Include="..\gframe\ikpMP3\decoder\mpaudec.h" />
+    <ClInclude Include="..\gframe\ikpMP3\decoder\mpaudectab.h" />
+    <ClInclude Include="..\gframe\ikpMP3\decoder\mpegaudio.h" />
+    <ClInclude Include="..\gframe\image_manager.h" />
+    <ClInclude Include="..\gframe\irrUString.h" />
+    <ClInclude Include="..\gframe\materials.h" />
+    <ClInclude Include="..\gframe\menu_handler.h" />
+    <ClInclude Include="..\gframe\mymutex.h" />
+    <ClInclude Include="..\gframe\mysignal.h" />
+    <ClInclude Include="..\gframe\mythread.h" />
+    <ClInclude Include="..\gframe\netserver.h" />
+    <ClInclude Include="..\gframe\network.h" />
+    <ClInclude Include="..\gframe\PlatformString.h" />
+    <ClInclude Include="..\gframe\replay.h" />
+    <ClInclude Include="..\gframe\replay_mode.h" />
+    <ClInclude Include="..\gframe\resource.h" />
+    <ClInclude Include="..\gframe\single_duel.h" />
+    <ClInclude Include="..\gframe\single_mode.h" />
+    <ClInclude Include="..\gframe\tag_duel.h" />
+    <ClInclude Include="..\gframe\User.h" />
+    <ClInclude Include="..\gframe\Win32FileManager.h" />
+    <ClInclude Include="..\gframe\SoundEffectPlayer.h" />
+    <ClInclude Include="..\gframe\IrrSoundEngine.h" />
+    <ClInclude Include="..\irrKlang\include\ik_ESoundEngineOptions.h" />
+    <ClInclude Include="..\irrKlang\include\ik_ESoundOutputDrivers.h" />
+    <ClInclude Include="..\irrKlang\include\ik_EStreamModes.h" />
+    <ClInclude Include="..\irrKlang\include\ik_IAudioRecorder.h" />
+    <ClInclude Include="..\irrKlang\include\ik_IAudioStream.h" />
+    <ClInclude Include="..\irrKlang\include\ik_IAudioStreamLoader.h" />
+    <ClInclude Include="..\irrKlang\include\ik_IFileFactory.h" />
+    <ClInclude Include="..\irrKlang\include\ik_IFileReader.h" />
+    <ClInclude Include="..\irrKlang\include\ik_IRefCounted.h" />
+    <ClInclude Include="..\irrKlang\include\ik_irrKlangTypes.h" />
+    <ClInclude Include="..\irrKlang\include\ik_ISound.h" />
+    <ClInclude Include="..\irrKlang\include\ik_ISoundDeviceList.h" />
+    <ClInclude Include="..\irrKlang\include\ik_ISoundEffectControl.h" />
+    <ClInclude Include="..\irrKlang\include\ik_ISoundEngine.h" />
+    <ClInclude Include="..\irrKlang\include\ik_ISoundMixedOutputReceiver.h" />
+    <ClInclude Include="..\irrKlang\include\ik_ISoundSource.h" />
+    <ClInclude Include="..\irrKlang\include\ik_ISoundStopEventReceiver.h" />
+    <ClInclude Include="..\irrKlang\include\ik_IVirtualRefCounted.h" />
+    <ClInclude Include="..\irrKlang\include\ik_SAudioStreamFormat.h" />
+    <ClInclude Include="..\irrKlang\include\ik_vec3d.h" />
+    <ClInclude Include="..\irrKlang\include\irrKlang.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\gframe\CGUIButton.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\gframe\CGUIImageButton.cpp">
+    </ClCompile>
+    <ClCompile Include="..\gframe\CGUITTFont.cpp">
+    </ClCompile>
+    <ClCompile Include="..\gframe\client_card.cpp">
+    </ClCompile>
+    <ClCompile Include="..\gframe\client_field.cpp">
+    </ClCompile>
+    <ClCompile Include="..\gframe\data_manager.cpp">
+    </ClCompile>
+    <ClCompile Include="..\gframe\deck_con.cpp">
+    </ClCompile>
+    <ClCompile Include="..\gframe\deck_manager.cpp">
+    </ClCompile>
+    <ClCompile Include="..\gframe\drawing.cpp">
+    </ClCompile>
+    <ClCompile Include="..\gframe\duelclient.cpp">
+    </ClCompile>
+    <ClCompile Include="..\gframe\event_handler.cpp">
+    </ClCompile>
+    <ClCompile Include="..\gframe\ExtensionMisc.cpp" />
+    <ClCompile Include="..\gframe\GlobalEventHandler.cpp" />
+    <ClCompile Include="..\gframe\ikpMP3\CIrrKlangAudioStreamLoaderMP3.cpp" />
+    <ClCompile Include="..\gframe\ikpMP3\CIrrKlangAudioStreamMP3.cpp" />
+    <ClCompile Include="..\gframe\ikpMP3\decoder\bits.c" />
+    <ClCompile Include="..\gframe\ikpMP3\decoder\mpaudec.c" />
+    <ClCompile Include="..\gframe\ikpMP3\ikpMP3.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\gframe\mymutex.cpp" />
+    <ClCompile Include="..\gframe\PlatformString.cpp" />
+    <ClCompile Include="..\gframe\Win32FileManager.cpp" />
+    <ClCompile Include="..\gframe\game.cpp">
+    </ClCompile>
+    <ClCompile Include="..\gframe\gframe.cpp">
+    </ClCompile>
+    <ClCompile Include="..\gframe\image_manager.cpp">
+    </ClCompile>
+    <ClCompile Include="..\gframe\materials.cpp">
+    </ClCompile>
+    <ClCompile Include="..\gframe\menu_handler.cpp">
+    </ClCompile>
+    <ClCompile Include="..\gframe\netserver.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\gframe\replay.cpp">
+    </ClCompile>
+    <ClCompile Include="..\gframe\replay_mode.cpp">
+    </ClCompile>
+    <ClCompile Include="..\gframe\single_duel.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\gframe\single_mode.cpp">
+    </ClCompile>
+    <ClCompile Include="..\gframe\tag_duel.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\gframe\SoundEffectPlayer.cpp" />
+    <ClCompile Include="..\irrlicht\src\os.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="clzma.vcxproj">
+      <Project>{A580F5D1-65A3-C24B-A638-A4328D6CA249}</Project>
+    </ProjectReference>
+    <ProjectReference Include="Irrlicht.vcxproj">
+      <Project>{50ABA6DD-D591-4E4B-BF08-296D496A250F}</Project>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="freetype.vcxproj">
+      <Project>{46E7F9F6-DB44-B447-844E-B7E4D433D40B}</Project>
+    </ProjectReference>
+    <ProjectReference Include="ocgcore.vcxproj">
+      <Project>{061fba12-2e77-954f-b141-577bfd54d396}</Project>
+    </ProjectReference>
+    <ProjectReference Include="sqlite3.vcxproj">
+      <Project>{AE322C5C-9D27-9245-804B-5EE09165A05E}</Project>
+    </ProjectReference>
+    <ProjectReference Include="event.vcxproj">
+      <Project>{B0B59AE7-9A7B-7C42-BAD8-AE7B310704E9}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\456_icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\gframe\ygopro.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="packages\boost.1.61.0.0\build\native\boost.targets" Condition="Exists('packages\boost.1.61.0.0\build\native\boost.targets')" />
+    <Import Project="packages\boost-vc140.1.61.0.0\build\native\boost-vc140.targets" Condition="Exists('packages\boost-vc140.1.61.0.0\build\native\boost-vc140.targets')" />
+    <Import Project="packages\boost_filesystem-vc140.1.61.0.0\build\native\boost_filesystem-vc140.targets" Condition="Exists('packages\boost_filesystem-vc140.1.61.0.0\build\native\boost_filesystem-vc140.targets')" />
+    <Import Project="packages\boost_system-vc140.1.61.0.0\build\native\boost_system-vc140.targets" Condition="Exists('packages\boost_system-vc140.1.61.0.0\build\native\boost_system-vc140.targets')" />
+    <Import Project="packages\boost_date_time-vc140.1.61.0.0\build\native\boost_date_time-vc140.targets" Condition="Exists('packages\boost_date_time-vc140.1.61.0.0\build\native\boost_date_time-vc140.targets')" />
+    <Import Project="packages\boost_regex-vc140.1.61.0.0\build\native\boost_regex-vc140.targets" Condition="Exists('packages\boost_regex-vc140.1.61.0.0\build\native\boost_regex-vc140.targets')" />
+  </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>这台计算机上缺少此项目引用的 NuGet 程序包。使用“NuGet 程序包还原”可下载这些程序包。有关更多信息，请参见 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\boost.1.61.0.0\build\native\boost.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\boost.1.61.0.0\build\native\boost.targets'))" />
+    <Error Condition="!Exists('packages\boost-vc140.1.61.0.0\build\native\boost-vc140.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\boost-vc140.1.61.0.0\build\native\boost-vc140.targets'))" />
+    <Error Condition="!Exists('packages\boost_filesystem-vc140.1.61.0.0\build\native\boost_filesystem-vc140.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\boost_filesystem-vc140.1.61.0.0\build\native\boost_filesystem-vc140.targets'))" />
+    <Error Condition="!Exists('packages\boost_system-vc140.1.61.0.0\build\native\boost_system-vc140.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\boost_system-vc140.1.61.0.0\build\native\boost_system-vc140.targets'))" />
+    <Error Condition="!Exists('packages\boost_date_time-vc140.1.61.0.0\build\native\boost_date_time-vc140.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\boost_date_time-vc140.1.61.0.0\build\native\boost_date_time-vc140.targets'))" />
+    <Error Condition="!Exists('packages\boost_regex-vc140.1.61.0.0\build\native\boost_regex-vc140.targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\boost_regex-vc140.1.61.0.0\build\native\boost_regex-vc140.targets'))" />
+  </Target>
+</Project>

@@ -1,0 +1,334 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="gframe">
+      <UniqueIdentifier>{C5690263-6D50-204F-9C80-24D4C53579AE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="LobbyClient">
+      <UniqueIdentifier>{c826c831-a6b9-4a28-8e03-fa46d829c3be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Extensions">
+      <UniqueIdentifier>{22448a5e-4d37-498f-8a5d-807142d46bcb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Extensions\Win32">
+      <UniqueIdentifier>{eac65707-aa14-4b14-b254-e9a24b3b092b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Extensions\Interface">
+      <UniqueIdentifier>{e0ae4503-9be3-4233-ad0d-9ef1ae852b06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="irrKlang">
+      <UniqueIdentifier>{0826dd0d-2ea3-4e1d-820a-3a7b2f98c1fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Extensions\ikpMP3">
+      <UniqueIdentifier>{9d65bdd7-d8d8-4527-8365-9f3390b132d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Extensions\ikpMP3\decoder">
+      <UniqueIdentifier>{507b3c76-fadf-411c-b369-ee8a34b7e0f8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\gframe\bufferio.h">
+      <Filter>gframe</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gframe\CGUIButton.h">
+      <Filter>gframe</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gframe\CGUIImageButton.h">
+      <Filter>gframe</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gframe\CGUITTFont.h">
+      <Filter>gframe</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gframe\client_card.h">
+      <Filter>gframe</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gframe\client_field.h">
+      <Filter>gframe</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gframe\config.h">
+      <Filter>gframe</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gframe\data_manager.h">
+      <Filter>gframe</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gframe\deck_con.h">
+      <Filter>gframe</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gframe\deck_manager.h">
+      <Filter>gframe</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gframe\duelclient.h">
+      <Filter>gframe</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gframe\event_handler.h">
+      <Filter>gframe</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gframe\game.h">
+      <Filter>gframe</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gframe\image_manager.h">
+      <Filter>gframe</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gframe\irrUString.h">
+      <Filter>gframe</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gframe\materials.h">
+      <Filter>gframe</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gframe\menu_handler.h">
+      <Filter>gframe</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gframe\mymutex.h">
+      <Filter>gframe</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gframe\mysignal.h">
+      <Filter>gframe</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gframe\mythread.h">
+      <Filter>gframe</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gframe\netserver.h">
+      <Filter>gframe</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gframe\network.h">
+      <Filter>gframe</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gframe\replay.h">
+      <Filter>gframe</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gframe\replay_mode.h">
+      <Filter>gframe</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gframe\single_duel.h">
+      <Filter>gframe</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gframe\single_mode.h">
+      <Filter>gframe</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gframe\tag_duel.h">
+      <Filter>gframe</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gframe\User.h">
+      <Filter>LobbyClient</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gframe\Win32FileManager.h">
+      <Filter>Extensions\Win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gframe\IFileManager.h">
+      <Filter>Extensions\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gframe\IAudioTracker.h">
+      <Filter>Extensions\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gframe\CGUIAdapter.h">
+      <Filter>Extensions\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\irrKlang\include\ik_ESoundEngineOptions.h">
+      <Filter>irrKlang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\irrKlang\include\ik_ESoundOutputDrivers.h">
+      <Filter>irrKlang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\irrKlang\include\ik_EStreamModes.h">
+      <Filter>irrKlang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\irrKlang\include\ik_IAudioRecorder.h">
+      <Filter>irrKlang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\irrKlang\include\ik_IAudioStream.h">
+      <Filter>irrKlang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\irrKlang\include\ik_IAudioStreamLoader.h">
+      <Filter>irrKlang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\irrKlang\include\ik_IFileFactory.h">
+      <Filter>irrKlang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\irrKlang\include\ik_IFileReader.h">
+      <Filter>irrKlang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\irrKlang\include\ik_IRefCounted.h">
+      <Filter>irrKlang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\irrKlang\include\ik_irrKlangTypes.h">
+      <Filter>irrKlang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\irrKlang\include\ik_ISound.h">
+      <Filter>irrKlang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\irrKlang\include\ik_ISoundDeviceList.h">
+      <Filter>irrKlang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\irrKlang\include\ik_ISoundEffectControl.h">
+      <Filter>irrKlang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\irrKlang\include\ik_ISoundEngine.h">
+      <Filter>irrKlang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\irrKlang\include\ik_ISoundMixedOutputReceiver.h">
+      <Filter>irrKlang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\irrKlang\include\ik_ISoundSource.h">
+      <Filter>irrKlang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\irrKlang\include\ik_ISoundStopEventReceiver.h">
+      <Filter>irrKlang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\irrKlang\include\ik_IVirtualRefCounted.h">
+      <Filter>irrKlang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\irrKlang\include\ik_SAudioStreamFormat.h">
+      <Filter>irrKlang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\irrKlang\include\ik_vec3d.h">
+      <Filter>irrKlang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\irrKlang\include\irrKlang.h">
+      <Filter>irrKlang</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gframe\PlatformString.h">
+      <Filter>gframe</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gframe\ikpMP3\CIrrKlangAudioStreamLoaderMP3.h">
+      <Filter>Extensions\ikpMP3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gframe\ikpMP3\CIrrKlangAudioStreamMP3.h">
+      <Filter>Extensions\ikpMP3</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gframe\ikpMP3\decoder\internal.h">
+      <Filter>Extensions\ikpMP3\decoder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gframe\ikpMP3\decoder\mpaudec.h">
+      <Filter>Extensions\ikpMP3\decoder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gframe\ikpMP3\decoder\mpaudectab.h">
+      <Filter>Extensions\ikpMP3\decoder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gframe\ikpMP3\decoder\mpegaudio.h">
+      <Filter>Extensions\ikpMP3\decoder</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gframe\GlobalEventHandler.h">
+      <Filter>gframe</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gframe\resource.h" />
+    <ClInclude Include="..\gframe\SoundEffectPlayer.h">
+      <Filter>Extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\gframe\IrrSoundEngine.h">
+      <Filter>Extensions\Win32</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\gframe\CGUIImageButton.cpp">
+      <Filter>gframe</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gframe\CGUITTFont.cpp">
+      <Filter>gframe</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gframe\client_card.cpp">
+      <Filter>gframe</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gframe\client_field.cpp">
+      <Filter>gframe</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gframe\data_manager.cpp">
+      <Filter>gframe</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gframe\deck_con.cpp">
+      <Filter>gframe</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gframe\deck_manager.cpp">
+      <Filter>gframe</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gframe\drawing.cpp">
+      <Filter>gframe</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gframe\duelclient.cpp">
+      <Filter>gframe</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gframe\event_handler.cpp">
+      <Filter>gframe</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gframe\game.cpp">
+      <Filter>gframe</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gframe\gframe.cpp">
+      <Filter>gframe</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gframe\image_manager.cpp">
+      <Filter>gframe</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gframe\materials.cpp">
+      <Filter>gframe</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gframe\menu_handler.cpp">
+      <Filter>gframe</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gframe\netserver.cpp">
+      <Filter>gframe</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gframe\replay.cpp">
+      <Filter>gframe</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gframe\replay_mode.cpp">
+      <Filter>gframe</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gframe\single_duel.cpp">
+      <Filter>gframe</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gframe\single_mode.cpp">
+      <Filter>gframe</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gframe\tag_duel.cpp">
+      <Filter>gframe</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gframe\Win32FileManager.cpp">
+      <Filter>Extensions\Win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gframe\CGUIButton.cpp">
+      <Filter>gframe</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gframe\ExtensionMisc.cpp">
+      <Filter>Extensions\Interface</Filter>
+    </ClCompile>
+    <ClCompile Include="..\irrlicht\src\os.cpp">
+      <Filter>gframe</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gframe\mymutex.cpp">
+      <Filter>gframe</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gframe\PlatformString.cpp">
+      <Filter>gframe</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gframe\ikpMP3\CIrrKlangAudioStreamLoaderMP3.cpp">
+      <Filter>Extensions\ikpMP3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gframe\ikpMP3\CIrrKlangAudioStreamMP3.cpp">
+      <Filter>Extensions\ikpMP3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gframe\ikpMP3\ikpMP3.cpp">
+      <Filter>Extensions\ikpMP3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gframe\ikpMP3\decoder\bits.c">
+      <Filter>Extensions\ikpMP3\decoder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gframe\ikpMP3\decoder\mpaudec.c">
+      <Filter>Extensions\ikpMP3\decoder</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gframe\SoundEffectPlayer.cpp">
+      <Filter>Extensions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\gframe\GlobalEventHandler.cpp">
+      <Filter>gframe</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\456_icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\gframe\ygopro.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+</Project>
