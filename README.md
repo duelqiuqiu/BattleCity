@@ -1,6 +1,10 @@
 游戏王：决斗城市（BattleCity） 源码
 源码基于YGOPro开发，https://github.com/Fluorohydride/ygopro
 
+编译环境：
+Visual Studio 2015 Update2
+
+
 ygopro
 
 一个《游戏王》的脚本引擎，附带示例图形界面。
